@@ -4,11 +4,12 @@
 
 ## انتشار با Wrangler
 
-1. Wrangler را نصب کن: `npm install -g wrangler`
-2. وارد Cloudflare شو: `npx wrangler login`
-3. داخل همین پوشه اجرا کن: `npx wrangler deploy`
+1. داخل همین پوشه اجرا کن: `npm install`
+2. برای بررسی بدون انتشار اجرا کن: `npm run check`
+3. وارد Cloudflare شو: `npx wrangler login`
+4. برای انتشار اجرا کن: `npm run deploy`
 
-فایل `wrangler.toml` از قبل به دیتابیس D1 موجود با نام `vodi-independent-db` متصل شده است. توکن یا رمز داخل این پروژه قرار نگرفته است.
+فایل `wrangler.toml` از قبل به دیتابیس D1 موجود با نام `vodi-independent-db` متصل شده است. توکن یا رمز داخل این پروژه قرار نگرفته است. این پروژه باید به‌عنوان **Worker** منتشر شود، نه Pages Static Upload.
 
 ## انتشار از داشبورد
 
